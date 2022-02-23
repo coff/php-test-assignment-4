@@ -31,15 +31,19 @@ class TimeOffset
     protected function isoToSecs($duration) {
         preg_match('/PT((\d{1,3})H)?((\d{1,2})M)?((\d{1,2}\.?\d{0,3})S)?/', $duration, $matches);
 
-        $hours = (int) $matches[2] ?? 0;
-        $minutes = (int) $matches[4] ?? 0;
-        $seconds = (float) $matches[6] ?? 0;
+        $hours = (int) ($matches[2] ?? 0);
+        $minutes = (int) ($matches[4] ?? 0);
+        $seconds = (float) ($matches[6] ?? 0);
 
         return ($hours * 60 * 60) + ($minutes * 60) + $seconds;
     }
 
     protected function secsToIso(float $seconds)
     {
+        if ($seconds == 0) {
+            return 'PT0S';
+        }
+
         $hours = floor($seconds / 3600);
         $seconds = fmod($seconds, 3600);
 
@@ -48,7 +52,10 @@ class TimeOffset
 
         $uSeconds = round(fmod($seconds, 1),3) * 1000;
 
-        return sprintf('PT%dH%dM%d.%03dS', $hours, $minutes, $seconds, $uSeconds);
+        return "PT" .
+            ($hours > 0 ? sprintf("%dH", $hours) : "") .
+            ($minutes > 0 ? sprintf("%dM", $minutes) : "") .
+            (($seconds > 0 || $uSeconds > 0) ? sprintf('%d.%03dS', $seconds, $uSeconds) : "");
     }
 
     public function sub($timeOffsetOrSeconds) : self {
