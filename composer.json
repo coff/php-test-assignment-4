@@ -1,0 +1,22 @@
+{
+  "name": "coff/test-assignment-3",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "kkubanek",
+      "email": "krzysztof.kubanek@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Coff\\TestAssignment\\": "src/"
+    }
+  },
+  "require": {
+    "jms/serializer": "^3.17",
+    "ext-json": "*",
+    "symfony/console": "^6.0"
+  }
+}
