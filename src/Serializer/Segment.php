@@ -38,4 +38,20 @@ class Segment
         $this->offset = $offset;
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOffset(): string
+    {
+        return $this->offset;
+    }
 }

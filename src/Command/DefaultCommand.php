@@ -66,7 +66,7 @@ class DefaultCommand extends Command
         }
 
         $segments = new Segments();
-        $segments->setSegments( $processor->getChapters() );
+        $segments->setSegments( $processor->getSegments() );
 
         $builder = SerializerBuilder::create();
         $builder->setSerializationVisitor("json", $factory = new JsonSerializationVisitorFactory());
