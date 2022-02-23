@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<silences>
+    <silence from="PT3M43.306S" until="PT3M46.225S" />
+    <silence from="PT7M16.779S" until="PT7M18.512S" />
+    <silence from="PT10M57.769S" until="PT10M58.38S" />
+    <silence from="PT13M46.388S" until="PT13M47.704S" />
+    <silence from="PT15M53.263S" until="PT15M55.05S" />
+    <silence from="PT17M28.285S" until="PT17M29.196S" />
+    <silence from="PT18M8.73S" until="PT18M10.131S" />
+    <silence from="PT19M53.79S" until="PT19M56.018S" />
+    <silence from="PT23M38.165S" until="PT23M41.066S" />
+    <silence from="PT25M0.711S" until="PT25M2.413S" />
+    <silence from="PT28M14.516S" until="PT28M15.8S" />
+    <silence from="PT32M0.783S" until="PT32M1.795S" />
+    <silence from="PT34M59.753S" until="PT35M1.776S" />
+    <silence from="PT36M18.283S" until="PT36M19.822S" />
+    <silence from="PT39M4.266S" until="PT39M6.691S" />
+    <silence from="PT41M40.352S" until="PT41M41.85S" />
+    <silence from="PT43M22.449S" until="PT43M24.629S" />
+    <silence from="PT45M40.252S" until="PT45M41.397S" />
+    <silence from="PT46M58.909S" until="PT46M59.931S" />
+    <silence from="PT47M56.087S" until="PT47M56.798S" />
+    <silence from="PT50M10.497S" until="PT50M12.821S" />
+    <silence from="PT52M29.725S" until="PT52M30.96S" />
+</silences>
